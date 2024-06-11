@@ -5,7 +5,8 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
     public function __construct($data = [], $args = null)
     {
         parent::__construct($data, $args);
-        wp_register_script('custom-swiper-slider', MY_PLUGIN_URL .'assets/js/custom-swiper-slider.js', array('swiper'), '1.0.0', true);
+        wp_register_style('custom-swiper-slider', MY_PLUGIN_URL . 'assets/css/custom-swiper-slider.css');
+        wp_register_script('custom-swiper-slider', MY_PLUGIN_URL . 'assets/js/custom-swiper-slider.js');
     }
 
     public function get_name()
@@ -137,6 +138,10 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
     }
 
     public function get_script_depends()
+    {
+        return ['swiper', 'custom-swiper-slider'];
+    }
+    public function get_style_depends()
     {
         return ['swiper', 'custom-swiper-slider'];
     }
