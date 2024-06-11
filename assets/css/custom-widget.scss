@@ -1,3 +1,6 @@
+:root {
+    --white-color: #fff;
+}
 .swiper-custom-slider-holder {
     overflow: hidden;
     .swiper-slide {
@@ -16,6 +19,13 @@
         }
         .inner {
             position: relative;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            max-width: 770px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--white-color);
         }
     }
 }

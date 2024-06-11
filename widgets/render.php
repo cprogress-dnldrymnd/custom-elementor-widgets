@@ -21,9 +21,12 @@
                             </div>
                         <?php } ?>
                         <?php if (!empty($settings['button_text']) && !empty($settings['button_link']['url'])) { ?>
-                            <a class="slide-button" href="<?php echo esc_url($settings['button_link']['url']); ?>" <?php echo ($settings['button_link']['is_external']) ? 'target="_blank"' : ''; ?> <?php echo ($settings['button_link']['nofollow']) ? 'rel="nofollow"' : ''; ?>>
+                            <div class="qodef-m-button qodef-qi-clear">
+
+                            <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="<?php echo esc_url($settings['button_link']['url']); ?>" <?php echo ($settings['button_link']['is_external']) ? 'target="_blank"' : ''; ?> <?php echo ($settings['button_link']['nofollow']) ? 'rel="nofollow"' : ''; ?>>
                                 <?php echo esc_html($settings['button_text']); ?>
                             </a>
+                      
                         <?php } ?>
                     </div>
                 </div>
