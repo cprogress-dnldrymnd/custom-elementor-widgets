@@ -53,6 +53,9 @@
                 color: var(--white-color);
             }
         }
+        .swiper-button-next, .swiper-button-prev {
+            color: var(--white-color);
+        }
         .swiper-button-next {
             content: "next" !important;
         }

@@ -44,6 +44,8 @@
         margin-bottom: 40px; }
       .swiper-custom-slider-holder .swiper-slide .inner h3 {
         color: var(--white-color); }
+    .swiper-custom-slider-holder .swiper-slide .swiper-button-next, .swiper-custom-slider-holder .swiper-slide .swiper-button-prev {
+      color: var(--white-color); }
     .swiper-custom-slider-holder .swiper-slide .swiper-button-next {
       content: "next" !important; }
     .swiper-custom-slider-holder .swiper-slide .swiper-button-prev {
