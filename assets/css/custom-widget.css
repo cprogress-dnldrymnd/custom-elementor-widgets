@@ -50,7 +50,8 @@
   border: 2px solid var(--white-color);
   font-size: 18px;
   letter-spacing: 0.32px;
-  color: var(--white-color); }
+  color: var(--white-color);
+  font-weight: bold; }
   .button-custom.button-custom.button-custom a:hover {
     background-color: var(--button-hover);
     color: var(--primary-color); }
