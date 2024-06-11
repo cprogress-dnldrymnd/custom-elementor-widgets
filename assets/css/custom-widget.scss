@@ -1,5 +1,7 @@
 :root {
     --white-color: #fff;
+    --button-hover: #f7f4ef;
+    --primary-color: #5A6E7F;
 }
 .swiper-custom-slider-holder {
     overflow: hidden;
@@ -43,6 +45,20 @@
             h3 {
                 color: var(--white-color);
             }
+        }
+    }
+}
+
+.button-custom.button-custom.button-custom {
+    a {
+        border-radius: 0;
+        background-color: #f7f4ef21;
+        border: 2px solid var(--white-color);
+        font-size: 18px;
+        letter-spacing: 0.32px;
+        &:hover {
+            background-color: var(--button-hover);
+            color: var(--primary-color);
         }
     }
 }
