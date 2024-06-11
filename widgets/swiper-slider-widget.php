@@ -60,6 +60,14 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
         );
 
         $repeater->add_control(
+            'slide_heading',
+            [
+                'label' => esc_html__('Slide Heading', 'your-swiper-widget'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+            ]
+        );
+
+        $repeater->add_control(
             'slide_content',
             [
                 'label' => esc_html__('Content', 'your-swiper-widget'),
