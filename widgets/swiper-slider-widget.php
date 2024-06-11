@@ -138,6 +138,6 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
 
     public function get_script_depends()
     {
-        return ['coptz-swiper', 'elementor-custom-widgets'];
+        return ['swiper', 'custom-swiper-slider'];
     }
 }
