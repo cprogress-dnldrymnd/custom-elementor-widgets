@@ -5,7 +5,7 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
     public function __construct($data = [], $args = null)
     {
         parent::__construct($data, $args);
-        wp_register_script('elementor-custom-widgets', get_stylesheet_directory_uri() . '/includes/elementor-widgets/elementor-custom-widgets.js', ['elementor-frontend'], '1.0.0', true);
+        wp_register_script('custom-swiper-slider', plugins_url('assets/js/custom-swiper-slider.js', __FILE__), array('swiper'), '1.0.0', true);
     }
 
     public function get_name()
@@ -84,7 +84,7 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
                 'default' => esc_html__('Click Here', 'your-swiper-widget'),
             ]
         );
-        
+
         $repeater->add_control(
             'button_link',
             [
