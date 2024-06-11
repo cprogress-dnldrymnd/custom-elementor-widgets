@@ -1,5 +1,8 @@
 <?php
-class Swiper_Slider_Widget extends Widget_Base
+
+namespace Elementor;
+
+class Swiper_Slider_Widget extends \Elementor\Widget_Base
 {
     // ... (Widget configuration: name, icon, categories, etc.)
     protected function render()
