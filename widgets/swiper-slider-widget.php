@@ -68,6 +68,30 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        $repeater->add_control(
+            'button_text',
+            [
+                'label' => esc_html__('Button Text', 'your-swiper-widget'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => esc_html__('Click Here', 'your-swiper-widget'),
+            ]
+        );
+        
+        $repeater->add_control(
+            'button_link',
+            [
+                'label' => esc_html__('Button Link', 'your-swiper-widget'),
+                'type' => \Elementor\Controls_Manager::URL,
+                'placeholder' => esc_html__('https://your-link.com', 'your-swiper-widget'),
+                'show_external' => true, // Allow external links
+                'default' => [
+                    'url' => '',
+                    'is_external' => true,
+                    'nofollow' => true,
+                ],
+            ]
+        );
+
         $this->add_control(
             'slides',
             [
