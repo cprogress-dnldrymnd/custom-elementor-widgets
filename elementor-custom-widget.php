@@ -23,3 +23,18 @@
      $widgets_manager->register(new \Swiper_Slider_Widget());
  }
  add_action('elementor/widgets/register', 'register_swiper_slider_widget');
+
+
+ function add_elementor_widget_categories($elements_manager)
+{
+
+	$elements_manager->add_category(
+		'Coptrz',
+		[
+			'title' => esc_html__('Humphries', 'textdomain'),
+			'icon'  => 'fa fa-plug',
+		]
+	);
+}
+add_action('elementor/elements/categories_registered', 'add_elementor_widget_categories');
+

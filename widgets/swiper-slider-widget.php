@@ -10,12 +10,12 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
 
   public function get_name()
   {
-    return 'brands_slider';
+    return 'custom_slider';
   }
 
   public function get_title()
   {
-    return esc_html__('Brands Slider', 'textdomain');
+    return esc_html__('Custom Slider', 'textdomain');
   }
 
   public function get_icon()
@@ -26,12 +26,12 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
 
   public function get_categories()
   {
-    return ['Coptrz'];
+    return ['Humphries'];
   }
 
   public function get_keywords()
   {
-    return ['brands'];
+    return ['slider', 'carousel'];
   }
 
 
