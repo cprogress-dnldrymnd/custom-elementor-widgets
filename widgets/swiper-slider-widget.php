@@ -5,7 +5,7 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
     public function __construct($data = [], $args = null)
     {
         parent::__construct($data, $args);
-        wp_register_script('custom-swiper-slider', plugins_url('assets/js/custom-swiper-slider.js', __FILE__), array('swiper'), '1.0.0', true);
+        wp_register_script('custom-swiper-slider', MY_PLUGIN_URL .'assets/js/custom-swiper-slider.js', array('swiper'), '1.0.0', true);
     }
 
     public function get_name()

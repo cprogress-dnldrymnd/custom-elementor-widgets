@@ -9,6 +9,7 @@
 
  if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
+ define('MY_PLUGIN_URL', plugin_dir_url(__FILE__));
  // Register the widget
  function register_swiper_slider_widget($widgets_manager) {
      require_once(__DIR__ . '/widgets/swiper-slider-widget.php'); 
