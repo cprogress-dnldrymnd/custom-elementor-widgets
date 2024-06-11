@@ -3,12 +3,13 @@
         <div class="swiper-wrapper">
             <?php foreach ($slides as $index => $slide) { ?>
                 <div class="swiper-slide">
+                    <?php if (!empty($slide['image']['url'])) { ?>
+                        <div class="bg-image">
+                            <img src="<?php echo esc_url($slide['image']['url']); ?>" alt="<?php echo esc_attr($slide['image']['alt']); ?>">
+                        </div>
+                    <?php } ?>
                     <div class="inner">
-                        <?php if (!empty($slide['image']['url'])) { ?>
-                            <div class="bg-image">
-                                <img src="<?php echo esc_url($slide['image']['url']); ?>" alt="<?php echo esc_attr($slide['image']['alt']); ?>">
-                            </div>
-                        <?php } ?>
+
                         <?php if (!empty($slide['slide_heading'])) { ?>
                             <div class="slide-heading">
                                 <h3><?php echo $slide['slide_heading']; ?></h3>
