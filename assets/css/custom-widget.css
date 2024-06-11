@@ -35,10 +35,11 @@
       text-align: center;
       padding-left: 10px;
       padding-right: 10px;
-      max-width: 770px;
+      max-width: 800px;
       margin-left: auto;
       margin-right: auto;
-      color: var(--white-color); }
+      color: var(--white-color);
+      font-size: 22px; }
       .swiper-custom-slider-holder .swiper-slide .inner > div:not(:last-child) {
         margin-bottom: 40px; }
       .swiper-custom-slider-holder .swiper-slide .inner h3 {
