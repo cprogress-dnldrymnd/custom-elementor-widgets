@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,4BAA6B;EACzB,QAAQ,EAAE,MAAM",
+"sources": ["custom-widget.scss"],
+"names": [],
+"file": "custom-widget.css"
+}
