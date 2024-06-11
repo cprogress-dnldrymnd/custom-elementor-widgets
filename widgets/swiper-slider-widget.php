@@ -114,7 +114,7 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
                         'slide_content' => esc_html__('Slide Content', 'your-swiper-widget'),
                     ],
                 ],
-                'title_field' => '{{{ slide_content }}}',
+                'title_field' => '{{{ slide_heading }}}',
             ]
         );
 
@@ -132,7 +132,7 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
-
+        $slides = $settings['slides'];
         include(__DIR__ . '/render.php');
     }
 
