@@ -1,11 +1,10 @@
 <?php
 /**
- * Plugin Name: Your Swiper Slider Widget for Elementor
- * Plugin URI: https://yourwebsite.com/
- * Description: A custom Elementor widget for creating Swiper sliders.
+ * Plugin Name: Custom Elementor Widgets
+ * Description: A custom Elementor widgets.
  * Version: 1.0.0
- * Author: Your Name
- * Author URI: https://yourwebsite.com/
+ * Author: Digitally Disruptive
+ * Author URI: https://digitallydisruptive.co.uk/
  */
 
  if (!defined('ABSPATH')) exit; // Exit if accessed directly
