@@ -23,13 +23,15 @@
                         <?php if (!empty($slide['button_text']) && !empty($slide['button_link']['url'])) { ?>
                             <div class="qodef-m-button qodef-qi-clear">
 
-                            <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="<?php echo esc_url($slide['button_link']['url']); ?>" <?php echo ($slide['button_link']['is_external']) ? 'target="_blank"' : ''; ?> <?php echo ($slide['button_link']['nofollow']) ? 'rel="nofollow"' : ''; ?>>
-                                <?php echo esc_html($slide['button_text']); ?>
-                            </a>
-                      
+                                <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="<?php echo esc_url($slide['button_link']['url']); ?>" <?php echo ($slide['button_link']['is_external']) ? 'target="_blank"' : ''; ?> <?php echo ($slide['button_link']['nofollow']) ? 'rel="nofollow"' : ''; ?>>
+                                    <?php echo esc_html($slide['button_text']); ?>
+                                </a>
+                            </div>
+
                         <?php } ?>
                     </div>
                 </div>
+
             <?php } ?>
         </div>
         <div class="swiper-button-next"></div>
