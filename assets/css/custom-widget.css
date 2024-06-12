@@ -5,11 +5,12 @@
 
 .swiper-custom-slider-holder {
   overflow: hidden; }
-  .swiper-custom-slider-holder .swiper-button-next, .swiper-custom-slider-holder .swiper-button-prev {
-    color: var(--white-color); }
-  .swiper-custom-slider-holder .swiper-button-next {
-    content: "next" !important; }
+  .swiper-custom-slider-holder .swiper-button-next,
   .swiper-custom-slider-holder .swiper-button-prev {
+    color: var(--white-color); }
+  .swiper-custom-slider-holder .swiper-button-next:after {
+    content: "next" !important; }
+  .swiper-custom-slider-holder .swiper-button-prev:after {
     content: "prev" !important; }
   .swiper-custom-slider-holder .swiper-slide {
     position: relative;
