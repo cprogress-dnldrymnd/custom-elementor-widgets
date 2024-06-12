@@ -8,10 +8,21 @@
   .swiper-custom-slider-holder .swiper-button-next,
   .swiper-custom-slider-holder .swiper-button-prev {
     color: var(--white-color); }
+    @media (max-width: 767px) {
+      .swiper-custom-slider-holder .swiper-button-next:after,
+      .swiper-custom-slider-holder .swiper-button-prev:after {
+        font-size: 30px;
+        color: var(--primary-color); } }
   .swiper-custom-slider-holder .swiper-button-next:after {
     content: "next" !important; }
+  @media (max-width: 767px) {
+    .swiper-custom-slider-holder .swiper-button-next {
+      right: -45px !important; } }
   .swiper-custom-slider-holder .swiper-button-prev:after {
     content: "prev" !important; }
+  @media (max-width: 767px) {
+    .swiper-custom-slider-holder .swiper-button-prev {
+      left: -45px !important; } }
   .swiper-custom-slider-holder .swiper-slide {
     position: relative;
     padding-top: 100px;
