@@ -63,5 +63,9 @@
   .button-custom.button-custom.button-custom a:hover {
     background-color: var(--button-hover);
     color: var(--primary-color); }
+  @media (max-width: 767px) {
+    .button-custom.button-custom.button-custom a:not(:hover) {
+      background-color: #f7f4ef8c;
+      color: var(--white-color); } }
 
 /*# sourceMappingURL=custom-widget.css.map */
