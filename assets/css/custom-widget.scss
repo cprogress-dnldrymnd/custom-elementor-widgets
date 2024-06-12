@@ -10,8 +10,7 @@
         color: var(--white-color);
         &:after {
             @media (max-width: 767px) {
-                font-size: 30px;
-                color: var(--primary-color);
+                font-size: 20px;
             }
         }
     }
@@ -20,7 +19,7 @@
             content: "next" !important;
         }
         @media (max-width: 767px) {
-            right: -45px !important;
+            right: -15px !important;
         }
     }
     .swiper-button-prev {
@@ -28,7 +27,7 @@
             content: "prev" !important;
         }
         @media (max-width: 767px) {
-            left: -45px !important;
+            left: -15px !important;
         }
     }
     .swiper-slide {
@@ -78,6 +77,10 @@
             h3 {
                 color: var(--white-color);
             }
+            @media (max-width: 767px) {
+                padding-left: 45px;
+                padding-right: 45px;
+            }
         }
     }
 }
@@ -95,12 +98,15 @@
             background-color: var(--button-hover);
             color: var(--primary-color);
         }
+        @media (max-width: 767px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         &:not(:hover) {
             @media (max-width: 767px) {
                 background-color: #f7f4ef8c;
                 color: var(--white-color);
             }
         }
-       
     }
 }

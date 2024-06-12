@@ -11,18 +11,17 @@
     @media (max-width: 767px) {
       .swiper-custom-slider-holder .swiper-button-next:after,
       .swiper-custom-slider-holder .swiper-button-prev:after {
-        font-size: 30px;
-        color: var(--primary-color); } }
+        font-size: 20px; } }
   .swiper-custom-slider-holder .swiper-button-next:after {
     content: "next" !important; }
   @media (max-width: 767px) {
     .swiper-custom-slider-holder .swiper-button-next {
-      right: -45px !important; } }
+      right: -15px !important; } }
   .swiper-custom-slider-holder .swiper-button-prev:after {
     content: "prev" !important; }
   @media (max-width: 767px) {
     .swiper-custom-slider-holder .swiper-button-prev {
-      left: -45px !important; } }
+      left: -15px !important; } }
   .swiper-custom-slider-holder .swiper-slide {
     position: relative;
     padding-top: 100px;
@@ -62,6 +61,10 @@
         margin-bottom: 40px; }
       .swiper-custom-slider-holder .swiper-slide .inner h3 {
         color: var(--white-color); }
+      @media (max-width: 767px) {
+        .swiper-custom-slider-holder .swiper-slide .inner {
+          padding-left: 45px;
+          padding-right: 45px; } }
 
 .button-custom.button-custom.button-custom a {
   border-radius: 0;
@@ -74,6 +77,10 @@
   .button-custom.button-custom.button-custom a:hover {
     background-color: var(--button-hover);
     color: var(--primary-color); }
+  @media (max-width: 767px) {
+    .button-custom.button-custom.button-custom a {
+      padding-left: 20px;
+      padding-right: 20px; } }
   @media (max-width: 767px) {
     .button-custom.button-custom.button-custom a:not(:hover) {
       background-color: #f7f4ef8c;
