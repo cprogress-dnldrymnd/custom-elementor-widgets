@@ -1,15 +1,11 @@
-var swiper = new Swiper(".swiper-step-slider", {
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
 var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: true,
     autoplay: false,
     spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     breakpoints: {
         0: {
             slidesPerView: 3,
