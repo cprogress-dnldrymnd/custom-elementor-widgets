@@ -105,7 +105,8 @@
     position: relative;
     overflow: hidden; }
   .step-slider .thumb-slider-holder .swiper-slide {
-    cursor: pointer; }
+    cursor: pointer;
+    width: auto; }
     .step-slider .thumb-slider-holder .swiper-slide.swiper-slide-thumb-active .inner {
       opacity: 1;
       font-size: 22px;

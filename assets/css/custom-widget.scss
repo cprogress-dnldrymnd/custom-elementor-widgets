@@ -136,6 +136,7 @@
         }
         .swiper-slide {
             cursor: pointer;
+            width: auto;
             &.swiper-slide-thumb-active {
                 .inner {
                     opacity: 1;
