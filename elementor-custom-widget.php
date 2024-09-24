@@ -21,8 +21,11 @@ add_action('elementor/frontend/after_register_scripts', 'enqueue_swiper_slider_a
 // Register the widget
 function register_swiper_slider_widget($widgets_manager)
 {
-    require_once(__DIR__ . '/widgets/swiper-slider-widget.php');
+    require_once(__DIR__ . '/widgets/swiper-slider/swiper-slider-widget.php');
+    require_once(__DIR__ . '/widgets/step-slider/step-slider-widget.php');
     $widgets_manager->register(new \Swiper_Slider_Widget());
+    $widgets_manager->register(new \Step_Slider());
+    
 }
 add_action('elementor/widgets/register', 'register_swiper_slider_widget');
 
