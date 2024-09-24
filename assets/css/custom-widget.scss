@@ -137,4 +137,10 @@
             height: 70px;
         }
     }
+    .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+        content: 'next' !important;
+    }
+    .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+        content: 'prev' !important;
+    }
 }

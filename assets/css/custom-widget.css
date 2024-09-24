@@ -106,5 +106,9 @@
     margin: 50px auto;
     background-color: var(--primary-color);
     height: 70px; }
+.step-slider .swiper-button-next:after, .step-slider .swiper-container-rtl .swiper-button-prev:after {
+  content: 'next' !important; }
+.step-slider .swiper-button-prev:after, .step-slider .swiper-container-rtl .swiper-button-next:after {
+  content: 'prev' !important; }
 
 /*# sourceMappingURL=custom-widget.css.map */
