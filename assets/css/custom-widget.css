@@ -88,6 +88,8 @@
 
 .step-slider > div {
   overflow: hidden; }
+.step-slider .swiper {
+  position: relative; }
 .step-slider .thumb-slider-holder {
   max-width: 1200px;
   margin-left: auto;

@@ -35,7 +35,6 @@ $loop = new WP_Query($args);
                 }
                 ?>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>
