@@ -3,8 +3,8 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     autoplay: false,
     spaceBetween: 10,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next-step",
+        prevEl: ".swiper-button-prev-step",
     },
     breakpoints: {
         0: {
