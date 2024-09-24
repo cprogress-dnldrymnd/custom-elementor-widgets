@@ -2,8 +2,6 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: false,
     autoplay: false,
     spaceBetween: 10,
-    freeMode: true,
-    watchSlidesProgress: true,
     navigation: {
         nextEl: ".swiper-button-next-step",
         prevEl: ".swiper-button-prev-step",
