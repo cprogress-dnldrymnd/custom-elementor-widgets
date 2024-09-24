@@ -96,15 +96,16 @@
   font-size: 18px;
   position: relative;
   padding-left: 50px;
-  padding-right: 50px;
-  overflow: 0.1;
-  transition: 400ms; }
+  padding-right: 50px; }
+  .step-slider .thumb-slider-holder .inner {
+    overflow: 0.1;
+    transition: 400ms; }
   .step-slider .thumb-slider-holder .outer {
     position: relative;
     overflow: hidden; }
   .step-slider .thumb-slider-holder .swiper-slide {
     cursor: pointer; }
-    .step-slider .thumb-slider-holder .swiper-slide.swiper-slide-thumb-active {
+    .step-slider .thumb-slider-holder .swiper-slide.swiper-slide-thumb-active .inner {
       opacity: 1;
       font-size: 22px; }
 .step-slider .divider {

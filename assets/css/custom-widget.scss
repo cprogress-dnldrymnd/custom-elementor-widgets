@@ -125,8 +125,10 @@
         position: relative;
         padding-left: 50px;
         padding-right: 50px;
-        overflow: 0.1;
-        transition: 400ms;
+        .inner {
+            overflow: 0.1;
+            transition: 400ms;
+        }
         .outer {
             position: relative;
             overflow: hidden;
@@ -134,8 +136,10 @@
         .swiper-slide {
             cursor: pointer;
             &.swiper-slide-thumb-active {
-                opacity: 1;
-                font-size: 22px;
+                .inner {
+                    opacity: 1;
+                    font-size: 22px;
+                }
             }
         }
     }
