@@ -92,7 +92,8 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Cormorant Garamond",sans-serif; }
+  font-family: "Cormorant Garamond",sans-serif;
+  font-size: 22px; }
   .step-slider .thumb-slider-holder .swiper-slide {
     cursor: pointer; }
   .step-slider .thumb-slider-holder:after {
