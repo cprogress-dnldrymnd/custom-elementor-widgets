@@ -5,7 +5,7 @@ $loop = new WP_Query($args);
 ?>
 <section class="slider">
     <div class="swiper swiper-step-thumb">
-        <div class="swiper-swapper">
+        <div class="swiper-wrapper">
             <?php
             foreach ($slide_ids as $slide_id) {
                 echo '<div class="swiper-slide">';
