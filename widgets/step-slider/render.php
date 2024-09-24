@@ -3,7 +3,7 @@ $slide_ids = $settings['slide_ids'];
 $args = array('post_type' => 'elementor_library', 'post__in' => $slide_ids);
 $loop = new WP_Query($args);
 ?>
-<section class="slider">
+<section class="step-slider">
     <div thumbsSlider class="swiper swiper-step-thumb">
         <div class="swiper-wrapper">
             <?php

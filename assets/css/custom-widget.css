@@ -86,4 +86,7 @@
       background-color: #f7f4ef8c;
       color: var(--white-color); } }
 
+.step-slider .swiper-wrapper {
+  overflow: hidden; }
+
 /*# sourceMappingURL=custom-widget.css.map */
