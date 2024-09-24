@@ -112,9 +112,8 @@
 }
 
 .step-slider {
-    .swiper-wrapper {
+    > div {
         overflow: hidden;
-        width: 100%;
     }
     .thumb-slider-holder {
         max-width: 1200px;

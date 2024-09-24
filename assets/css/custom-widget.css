@@ -86,9 +86,8 @@
       background-color: #f7f4ef8c;
       color: var(--white-color); } }
 
-.step-slider .swiper-wrapper {
-  overflow: hidden;
-  width: 100%; }
+.step-slider > div {
+  overflow: hidden; }
 .step-slider .thumb-slider-holder {
   max-width: 1200px;
   margin-left: auto;
