@@ -92,5 +92,15 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
+  .step-slider .thumb-slider-holder .swiper-slide {
+    cursor: pointer; }
+  .step-slider .thumb-slider-holder:after {
+    content: "";
+    width: 1px;
+    height: 63px;
+    display: block;
+    margin: 50px auto;
+    background-color: var(--primary-color);
+    height: 70px; }
 
 /*# sourceMappingURL=custom-widget.css.map */
