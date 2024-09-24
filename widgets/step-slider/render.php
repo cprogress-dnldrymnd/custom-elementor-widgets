@@ -9,9 +9,10 @@ $loop = new WP_Query($args);
             <div class="swiper-wrapper">
                 <?php
                 foreach ($slide_ids as $slide_id) {
+                    $title =  get_the_title($slide_id);
                     echo '<div class="swiper-slide">';
                     echo '<div class="inner">';
-                    echo get_the_title($slide_id);
+                    echo substr($title, strpos($title, ":") + 1);
                     echo '</div>';
                     echo '</div>';
                 }
