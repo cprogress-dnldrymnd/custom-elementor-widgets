@@ -132,15 +132,14 @@
         .swiper-slide {
             cursor: pointer;
         }
-        &:after {
-            content: "";
-            width: 1px;
-            height: 63px;
-            display: block;
-            margin: 50px auto;
-            background-color: var(--primary-color);
-            height: 70px;
-        }
+    }
+    .divider {
+        width: 1px;
+        height: 63px;
+        display: block;
+        margin: 50px auto;
+        background-color: var(--primary-color);
+        height: 70px;
     }
     .swiper-button-next,
     .swiper-container-rtl .swiper-button-prev {
