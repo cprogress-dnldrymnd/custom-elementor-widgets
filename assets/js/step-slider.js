@@ -12,17 +12,10 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
         },
 
         768: {
-            slidesPerView: 3,
+            slidesPerView: 'auto',
         },
 
-
-        992: {
-            slidesPerView: 4,
-        },
-
-        1200: {
-            slidesPerView: 5,
-        },
+      
 
     },
 });
