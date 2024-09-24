@@ -121,16 +121,21 @@
         margin-left: auto;
         margin-right: auto;
         font-family: "Cormorant Garamond", sans-serif;
-        font-size: 22px;
+        font-size: 18px;
         position: relative;
         padding-left: 50px;
         padding-right: 50px;
+        overflow: 0.1;
         .outer {
             position: relative;
             overflow: hidden;
         }
         .swiper-slide {
             cursor: pointer;
+            &.swiper-slide-thumb-active {
+                opacity: 1;
+                font-size: 22px;
+            }
         }
     }
     .divider {
