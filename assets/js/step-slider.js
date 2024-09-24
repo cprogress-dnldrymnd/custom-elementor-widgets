@@ -1,7 +1,7 @@
 var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: false,
     autoplay: false,
-    spaceBetween: 60,
+    spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next-step",
         prevEl: ".swiper-button-prev-step",
@@ -12,10 +12,17 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
         },
 
         768: {
-            slidesPerView: 'auto',
+            slidesPerView: 3,
         },
 
-      
+
+        992: {
+            slidesPerView: 4,
+        },
+
+        1200: {
+            slidesPerView: 5,
+        },
 
     },
 });
