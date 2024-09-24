@@ -115,15 +115,16 @@
     > div {
         overflow: hidden;
     }
-    .swiper {
-        position: relative;
-    }
+  
     .thumb-slider-holder {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        font-family: "Cormorant Garamond",sans-serif;
+        font-family: "Cormorant Garamond", sans-serif;
         font-size: 22px;
+        position: relative;
+        padding-left: 100px;
+        padding-right: 100px;
         .swiper-slide {
             cursor: pointer;
         }
@@ -137,10 +138,18 @@
             height: 70px;
         }
     }
-    .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
-        content: 'next' !important;
+    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev {
+        right: 0;
+        &:after {
+            content: "next" !important;
+        }
     }
-    .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
-        content: 'prev' !important;
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next {
+        left: 0;
+        &:after {
+            content: "prev" !important;
+        }
     }
 }
