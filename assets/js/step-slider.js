@@ -8,20 +8,20 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     },
     breakpoints: {
         0: {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
 
         768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
 
 
         992: {
-            slidesPerView: 5,
+            slidesPerView: 4,
         },
 
         1200: {
-            slidesPerView: 6,
+            slidesPerView: 5,
         },
 
     },
