@@ -125,6 +125,10 @@
         position: relative;
         padding-left: 50px;
         padding-right: 50px;
+        .outer {
+            position: relative;
+            overflow: hidden;
+        }
         .swiper-slide {
             cursor: pointer;
         }
