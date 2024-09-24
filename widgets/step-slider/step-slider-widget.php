@@ -5,7 +5,8 @@ class Step_Slider extends \Elementor\Widget_Base
     public function __construct($data = [], $args = null)
     {
         parent::__construct($data, $args);
-        wp_register_script('step-slider', MY_PLUGIN_URL . 'assets/js/step-slider.js');
+        wp_register_script('step-slider', MY_PLUGIN_URL . 'assets/js/custom-swiper-slider.js');
+
     }
 
     public function get_name()
@@ -95,6 +96,6 @@ class Step_Slider extends \Elementor\Widget_Base
 
     public function get_script_depends()
     {
-        return ['coptz-swiper', 'elementor-custom-widgets'];
+        return ['swiper', 'step-slider'];
     }
 }
