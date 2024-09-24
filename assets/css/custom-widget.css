@@ -87,6 +87,7 @@
       color: var(--white-color); } }
 
 .step-slider .swiper-wrapper {
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
 
 /*# sourceMappingURL=custom-widget.css.map */
