@@ -4,7 +4,7 @@ $args = array('post_type' => 'elementor_library', 'post__in' => $slide_ids);
 $loop = new WP_Query($args);
 ?>
 <section class="slider">
-    <div class="swiper">
+    <div class="swiper swiper-step-thumb">
         <div class="swiper-swapper">
             <?php
             foreach ($slide_ids as $slide_id) {
@@ -17,7 +17,7 @@ $loop = new WP_Query($args);
             ?>
         </div>
     </div>
-    <div class="swiper swiper-is-vertical">
+    <div class="swiper swiper-step-slider">
         <div class="swiper-wrapper">
             <?php
             foreach ($slide_ids as $slide_id) {

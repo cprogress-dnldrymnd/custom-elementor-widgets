@@ -5,7 +5,7 @@ class Step_Slider extends \Elementor\Widget_Base
     public function __construct($data = [], $args = null)
     {
         parent::__construct($data, $args);
-        wp_register_script('step-slider', MY_PLUGIN_URL . 'assets/js/step-slider.js', ['elementor-frontend'], '1.0.0', true);
+        wp_register_script('step-slider', MY_PLUGIN_URL . 'assets/js/step-slider.js');
     }
 
     public function get_name()
