@@ -97,7 +97,8 @@
   position: relative;
   padding-left: 50px;
   padding-right: 50px;
-  overflow: 0.1; }
+  overflow: 0.1;
+  transition: 400ms; }
   .step-slider .thumb-slider-holder .outer {
     position: relative;
     overflow: hidden; }
