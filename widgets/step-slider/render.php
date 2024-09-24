@@ -20,9 +20,9 @@ $loop = new WP_Query($args);
                     ?>
                 </div>
             </div>
-            <div class="swiper-button-next swiper-button-next-step"></div>
-            <div class="swiper-button-prev swiper-button-prev-step"></div>
         </div>
+        <div class="swiper-button-next swiper-button-next-step"></div>
+        <div class="swiper-button-prev swiper-button-prev-step"></div>
     </div>
     <div class="main-slider-holder">
         <div class="swiper swiper-step-slider">
