@@ -18,6 +18,8 @@ $loop = new WP_Query($args);
                 }
                 ?>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
     <div class="main-slider-holder">
