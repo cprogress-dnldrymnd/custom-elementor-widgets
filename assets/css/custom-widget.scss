@@ -115,7 +115,9 @@
     > div {
         overflow: hidden;
     }
-
+  .swiper-wrapper {
+        overflow: visible !important;
+    }
     .thumb-slider-holder {
         max-width: 1200px;
         margin-left: auto;
