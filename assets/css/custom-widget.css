@@ -5,6 +5,8 @@
 
 .swiper-custom-slider-holder {
   overflow: hidden; }
+  .swiper-custom-slider-holder .swiper-wrapper {
+    overflow: visible !important; }
   .swiper-custom-slider-holder .swiper-button-next,
   .swiper-custom-slider-holder .swiper-button-prev {
     color: var(--white-color); }
