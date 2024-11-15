@@ -31,7 +31,8 @@ $loop = new WP_Query($args);
                             <?php
                             foreach ($slide_ids as $key => $slide_id) {
                                 $number = '0' . $key + 1;
-                                echo '<div class="custom-pagination" key='.$key.'">';
+                                $class = $key == 0 ? 'active' : '';
+                                echo '<div class="custom-pagination ' . $class . '" key=' . $key . '">';
                                 echo '<div class="inner">';
                                 echo '<div class="slide-number">' . $number . '</div>';
                                 echo '<div class="slide-progress"></div>';
