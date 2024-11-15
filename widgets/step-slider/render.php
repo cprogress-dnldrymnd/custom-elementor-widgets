@@ -42,12 +42,7 @@ $loop = new WP_Query($args);
                         </div>
                     </div>
                     <div class="slide-progress2"></div>
-                    <div class="autoplay-progress">
-                        <svg viewBox="0 0 48 48">
-                            <circle cx="24" cy="24" r="20"></circle>
-                        </svg>
-                        <span></span>
-                    </div>
+                    
                 </div>
                 <div class="swiper-button-next swiper-button-next-step"></div>
             </div>
