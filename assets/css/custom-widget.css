@@ -108,7 +108,7 @@
     gap: 20px;
     width: 211.11px;
     transition: 400ms;
-    transform: translateX(var(--offset), 0); }
+    transform: translateX(var(--offset)); }
     .step-slider .thumb-slider-holder .custom-pagination-holder .custom-pagination.active .inner .slide-progress {
       width: 60px; }
     .step-slider .thumb-slider-holder .custom-pagination-holder .inner {
