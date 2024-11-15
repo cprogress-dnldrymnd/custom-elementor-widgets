@@ -1,4 +1,5 @@
-const progressCircle = document.querySelector(".slide-progress2");
+const progressCircle = document.querySelector(".autoplay-progress svg");
+const progressContent = document.querySelector(".autoplay-progress span");
 
 var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: false,
@@ -15,11 +16,10 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     },
     on: {
         autoplayTimeLeft(s, time, progress) {
-            console.log(progress);
-            progressCircle.style.setProperty("--progress", 1 - progress);
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
         }
-    }
-
+      }
 });
 
 var swiper_step_slider = new Swiper('.swiper-step-slider', {
