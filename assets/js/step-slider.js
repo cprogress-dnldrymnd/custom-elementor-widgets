@@ -28,13 +28,15 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
             } else {
                 jQuery('.custom-pagination-holder').css('--offset', '0');
             }
+/*
             setTimeout(function () {
                 jQuery('.slide-progress').addClass('animate');
-            }, 500);
+            }, 500);*/
 
         },
+        /*
         init: function () {
             jQuery('.slide-progress').addClass('animate');
-        },
+        },*/
     }
 });
