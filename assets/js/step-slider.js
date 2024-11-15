@@ -4,7 +4,7 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: false,
     speed: 500,
     autoplay: {
-        delay: 500,
+        delay: 5000,
         disableOnInteraction: false
     },
     spaceBetween: 10,
