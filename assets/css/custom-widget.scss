@@ -153,6 +153,18 @@
         .thumb-slider-inner {
             display: flex;
             gap: 40px;
+            > div {
+                flex: 0 0 auto;
+                width: calc(50% - 20px);
+            }
+            .left {
+                display: flex;
+                align-items: center;
+                .swiper-button-next, .swiper-button-prev {
+                    position: static;
+                    transform: none;
+                }
+            }
         }
     }
     .divider {
