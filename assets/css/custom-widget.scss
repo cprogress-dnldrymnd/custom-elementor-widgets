@@ -118,7 +118,7 @@
     > div {
         overflow: hidden;
     }
-  .swiper-wrapper {
+    .swiper-wrapper {
         overflow: visible !important;
     }
     .thumb-slider-holder {
@@ -130,16 +130,15 @@
         position: relative;
         padding-left: 10px;
         padding-right: 10px;
-        
-      
+
         .swiper-slide {
             cursor: pointer;
             width: auto;
             &.swiper-slide-thumb-active {
                 .inner {
-                    opacity: 1;
-                    font-size: 22px;
-                    text-decoration: underline;
+                    .slide-progress {
+                        width: 60px !important;
+                    }
                 }
             }
         }
@@ -169,14 +168,17 @@
                         align-items: center;
                         gap: 20px;
                         .slide-progress {
-                            width: 60px;
+                            width: 0;
                             height: 5px;
                             display: block;
+                            transition: 400ms;
+                            background-color: #e3e1dd;
                         }
                     }
                 }
-              
-                .swiper-button-next, .swiper-button-prev {
+
+                .swiper-button-next,
+                .swiper-button-prev {
                     position: static;
                     transform: none;
                 }
