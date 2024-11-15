@@ -140,6 +140,7 @@
             width: 211.11px;
             transition: 400ms;
             .custom-pagination {
+                cursor: pointer;
                 &.active {
                     .inner {
                         .slide-progress {
