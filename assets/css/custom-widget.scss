@@ -160,6 +160,8 @@
             .left {
                 display: flex;
                 align-items: center;
+                justify-content: center;
+                gap: 15px;
                 .swiper-button-next, .swiper-button-prev {
                     position: static;
                     transform: none;
