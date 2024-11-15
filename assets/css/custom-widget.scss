@@ -136,6 +136,15 @@
             gap: 20px;
             width: 211.11px;
             overflow: hidden;
+            .custom-pagination {
+                &.active {
+                    .inner {
+                        .slide-progress {
+                            width: 60px;
+                        }
+                    }
+                }
+            }
             .inner {
                 transition: 400ms;
                 display: flex;
