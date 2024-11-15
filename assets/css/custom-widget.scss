@@ -134,6 +134,7 @@
         .custom-pagination-holder {
             display: flex;
             gap: 20px;
+            width: 211.11px;
             .inner {
                 transition: 400ms;
                 display: flex;
@@ -162,7 +163,6 @@
                 align-items: center;
                 justify-content: center;
                 gap: 15px;
-                width: 281.11px;
                 .swiper-button-next,
                 .swiper-button-prev {
                     position: static;
