@@ -24,23 +24,25 @@ $loop = new WP_Query($args);
     <div class="thumb-slider-holder">
         <div class="thumb-slider-inner">
             <div class="left">
-                <div class="swiper-button-prev swiper-button-prev-step"></div>
-                <div class="outer">
-                    <div class="custom-pagination-holder">
-                        <?php
-                        foreach ($slide_ids as $key => $slide_id) {
-                            $number = '0' . $key + 1;
-                            echo '<div class="custom-pagination">';
-                            echo '<div class="inner">';
-                            echo '<div class="slide-number">' . $number . '</div>';
-                            echo '<div class="slide-progress"></div>';
-                            echo '</div>';
-                            echo '</div>';
-                        }
-                        ?>
+                <div class="left-inner">
+                    <div class="swiper-button-prev swiper-button-prev-step"></div>
+                    <div class="outer">
+                        <div class="custom-pagination-holder">
+                            <?php
+                            foreach ($slide_ids as $key => $slide_id) {
+                                $number = '0' . $key + 1;
+                                echo '<div class="custom-pagination">';
+                                echo '<div class="inner">';
+                                echo '<div class="slide-number">' . $number . '</div>';
+                                echo '<div class="slide-progress"></div>';
+                                echo '</div>';
+                                echo '</div>';
+                            }
+                            ?>
+                        </div>
                     </div>
+                    <div class="swiper-button-next swiper-button-next-step"></div>
                 </div>
-                <div class="swiper-button-next swiper-button-next-step"></div>
             </div>
             <div class="right"></div>
         </div>
