@@ -162,11 +162,11 @@
                         width: 300px;
                     }
                     .inner {
-                        overflow: 0.1;
                         transition: 400ms;
                         display: flex;
                         align-items: center;
                         gap: 20px;
+                        font-size: 20px;
                         .slide-progress {
                             width: 0;
                             height: 5px;

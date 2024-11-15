@@ -30,7 +30,7 @@ $loop = new WP_Query($args);
                         <div class="swiper-wrapper">
                             <?php
                             foreach ($slide_ids as $key => $slide_id) {
-                                $number = $key + 1;
+                                $number = '0' . $key + 1;
                                 echo '<div class="swiper-slide">';
                                 echo '<div class="inner">';
                                 echo '<div class="slide-number">' . $number . '</div>';

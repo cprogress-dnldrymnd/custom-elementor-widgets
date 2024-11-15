@@ -124,11 +124,11 @@
         .step-slider .thumb-slider-holder .thumb-slider-inner .left .outer .swiper {
           width: 300px; }
         .step-slider .thumb-slider-holder .thumb-slider-inner .left .outer .inner {
-          overflow: 0.1;
           transition: 400ms;
           display: flex;
           align-items: center;
-          gap: 20px; }
+          gap: 20px;
+          font-size: 20px; }
           .step-slider .thumb-slider-holder .thumb-slider-inner .left .outer .inner .slide-progress {
             width: 0;
             height: 5px;
