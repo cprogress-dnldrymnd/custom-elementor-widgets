@@ -18,7 +18,7 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
             jQuery('.custom-pagination[key="' + index + '"]').addClass('active');
 
             if (index == 3) {
-                jQuery('.custom-pagination-holder').css('--offset', '-57x');
+                jQuery('.custom-pagination-holder').css('--offset', '-57px');
             } else if (index == 4) {
                 jQuery('.custom-pagination-holder').css('--offset', '-114px');
             } else if (index == 5) {
