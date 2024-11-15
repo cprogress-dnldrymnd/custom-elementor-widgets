@@ -242,7 +242,7 @@
     &.animate {
         &:before {
             animation-name: width;
-            animation-duration: 5000ms;
+            animation-duration: 500ms;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
