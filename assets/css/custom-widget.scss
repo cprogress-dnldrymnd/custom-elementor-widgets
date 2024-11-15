@@ -159,6 +159,9 @@
                     position: relative;
                     overflow: hidden;
                     width: auto;
+                    .swiper {
+                        width: 300px;
+                    }
                     .inner {
                         overflow: 0.1;
                         transition: 400ms;
