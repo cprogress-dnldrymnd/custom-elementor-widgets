@@ -34,6 +34,7 @@ $loop = new WP_Query($args);
                                 echo '<div class="swiper-slide">';
                                 echo '<div class="inner">';
                                 echo $key + 1;
+                                echo '<div class="slide-progress"></div>';
                                 echo '</div>';
                                 echo '</div>';
                             }
