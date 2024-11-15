@@ -144,6 +144,9 @@
                     .inner {
                         .slide-progress {
                             width: 60px;
+                            &:before {
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -238,7 +241,7 @@
         background-color: var(--primary-color);
         width: 0;
     }
-
+    /*
     &.animate {
         &:before {
             animation-name: width;
@@ -246,7 +249,7 @@
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
-    }
+    }*/
 }
 
 /* Animation Keyframes*/
