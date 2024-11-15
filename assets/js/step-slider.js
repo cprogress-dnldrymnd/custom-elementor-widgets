@@ -1,3 +1,5 @@
+const progressCircle = document.querySelector(".slide-progress");
+
 var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: false,
     autoplay: {
@@ -19,7 +21,6 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
 
 });
 
-const progressCircle = document.querySelector(".slide-progress");
 var swiper_step_slider = new Swiper('.swiper-step-slider', {
     loop: false,
     autoplay: false,
