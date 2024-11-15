@@ -6,6 +6,7 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     spaceBetween: 20,
     slidesPerView: 'auto',
     watchSlidesProgress: true,
+    centeredSlides: true,
     navigation: {
         nextEl: ".swiper-button-next-step",
         prevEl: ".swiper-button-prev-step",
