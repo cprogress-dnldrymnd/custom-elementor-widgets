@@ -26,23 +26,19 @@ $loop = new WP_Query($args);
             <div class="left">
                 <div class="swiper-button-prev swiper-button-prev-step"></div>
                 <div class="outer">
-                    <div thumbsSlider class="swiper swiper-step-thumb">
-                        <div class="swiper-wrapper">
-                            <?php
-                            foreach ($slide_ids as $key => $slide_id) {
-                                $number = '0' . $key + 1;
-                                echo '<div class="swiper-slide">';
-                                echo '<div class="inner">';
-                                echo '<div class="slide-number">' . $number . '</div>';
-                                echo '<div class="slide-progress"></div>';
-                                echo '</div>';
-                                echo '</div>';
-                            }
-                            ?>
-                        </div>
+                    <div class="custom-pagination-holder">
+                        <?php
+                        foreach ($slide_ids as $key => $slide_id) {
+                            $number = '0' . $key + 1;
+                            echo '<div class="custom-pagination">';
+                            echo '<div class="inner">';
+                            echo '<div class="slide-number">' . $number . '</div>';
+                            echo '<div class="slide-progress"></div>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                        ?>
                     </div>
-                    <div class="slide-progress2"></div>
-                    
                 </div>
                 <div class="swiper-button-next swiper-button-next-step"></div>
             </div>
