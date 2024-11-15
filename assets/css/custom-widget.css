@@ -101,45 +101,9 @@
   position: relative;
   padding-left: 10px;
   padding-right: 10px; }
-  .step-slider .thumb-slider-holder .swiper-slide {
-    cursor: pointer;
-    width: auto;
-    width: auto !important; }
-    .step-slider .thumb-slider-holder .swiper-slide.swiper-slide-thumb-active .inner .slide-progress {
-      width: 60px !important; }
-  .step-slider .thumb-slider-holder .thumb-slider-inner {
+  .step-slider .thumb-slider-holder .custom-pagination-holder {
     display: flex;
-    gap: 40px; }
-    .step-slider .thumb-slider-holder .thumb-slider-inner > div {
-      flex: 0 0 auto;
-      width: calc(50% - 20px); }
-    .step-slider .thumb-slider-holder .thumb-slider-inner .left {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px; }
-      .step-slider .thumb-slider-holder .thumb-slider-inner .left .outer {
-        position: relative;
-        overflow: hidden;
-        width: auto; }
-        .step-slider .thumb-slider-holder .thumb-slider-inner .left .outer .swiper {
-          width: 200px; }
-        .step-slider .thumb-slider-holder .thumb-slider-inner .left .outer .inner {
-          transition: 400ms;
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          font-size: 20px;
-          color: #5a6e7f; }
-          .step-slider .thumb-slider-holder .thumb-slider-inner .left .outer .inner .slide-progress {
-            width: 0;
-            height: 5px;
-            display: block;
-            transition: 400ms; }
-      .step-slider .thumb-slider-holder .thumb-slider-inner .left .swiper-button-next,
-      .step-slider .thumb-slider-holder .thumb-slider-inner .left .swiper-button-prev {
-        position: static;
-        transform: none; }
+    gap: 20px; }
 .step-slider .divider {
   width: 1px;
   height: 63px;

@@ -131,61 +131,11 @@
         padding-left: 10px;
         padding-right: 10px;
 
-        .swiper-slide {
-            cursor: pointer;
-            width: auto;
-            width: auto !important;
-            &.swiper-slide-thumb-active {
-                .inner {
-                    .slide-progress {
-                        width: 60px !important;
-                    }
-                }
-            }
-        }
+       .custom-pagination-holder {
+        display: flex;
+        gap: 20px;
+       }
 
-        .thumb-slider-inner {
-            display: flex;
-            gap: 40px;
-            > div {
-                flex: 0 0 auto;
-                width: calc(50% - 20px);
-            }
-            .left {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 15px;
-                .outer {
-                    position: relative;
-                    overflow: hidden;
-                    width: auto;
-                    .swiper {
-                        width: 200px;
-                    }
-                    .inner {
-                        transition: 400ms;
-                        display: flex;
-                        align-items: center;
-                        gap: 20px;
-                        font-size: 20px;
-                        color: #5a6e7f;
-                        .slide-progress {
-                            width: 0;
-                            height: 5px;
-                            display: block;
-                            transition: 400ms;
-                        }
-                    }
-                }
-
-                .swiper-button-next,
-                .swiper-button-prev {
-                    position: static;
-                    transform: none;
-                }
-            }
-        }
     }
     .divider {
         width: 1px;
