@@ -194,7 +194,7 @@
     background-color: var(--primary-color);
     width: 0;
     transition: 500ms;
-    transition-delay: 500ms; }
+    transition-delay: 300ms; }
 
 /* Animation Keyframes*/
 @keyframes width {
