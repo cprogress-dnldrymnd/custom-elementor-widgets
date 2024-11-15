@@ -28,10 +28,10 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
             } else {
                 jQuery('.custom-pagination-holder').css('--offset', '0');
             }
-/*
-            setTimeout(function () {
-                jQuery('.slide-progress').addClass('animate');
-            }, 500);*/
+            /*
+                        setTimeout(function () {
+                            jQuery('.slide-progress').addClass('animate');
+                        }, 500);*/
 
         },
         /*
@@ -39,4 +39,10 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
             jQuery('.slide-progress').addClass('animate');
         },*/
     }
+});
+
+jQuery('.custom-pagination').click(function (e) {
+    $key = jQuery(this).attr('key');
+    swiper_step_slider.slideTo($key);
+    e.preventDefault();
 });
