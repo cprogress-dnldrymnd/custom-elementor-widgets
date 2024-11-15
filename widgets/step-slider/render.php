@@ -29,11 +29,11 @@ $loop = new WP_Query($args);
                     <div thumbsSlider class="swiper swiper-step-thumb">
                         <div class="swiper-wrapper">
                             <?php
-                            foreach ($slide_ids as $slide_id) {
+                            foreach ($slide_ids as $key => $slide_id) {
                                 $title =  get_the_title($slide_id);
                                 echo '<div class="swiper-slide">';
                                 echo '<div class="inner">';
-                                echo substr($title, strpos($title, ":") + 1);
+                                echo $key + 1;
                                 echo '</div>';
                                 echo '</div>';
                             }
