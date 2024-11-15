@@ -130,11 +130,7 @@
         position: relative;
         padding-left: 10px;
         padding-right: 10px;
-        .inner {
-            overflow: 0.1;
-            transition: 400ms;
-            display: inline-block
-        }
+        
         .outer {
             position: relative;
             overflow: hidden;
@@ -162,6 +158,11 @@
                 align-items: center;
                 justify-content: center;
                 gap: 15px;
+                .inner {
+                    overflow: 0.1;
+                    transition: 400ms;
+                    display: inline-block
+                }
                 .swiper-button-next, .swiper-button-prev {
                     position: static;
                     transform: none;
