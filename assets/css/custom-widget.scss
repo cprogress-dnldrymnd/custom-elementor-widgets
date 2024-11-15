@@ -165,7 +165,14 @@
                     .inner {
                         overflow: 0.1;
                         transition: 400ms;
-                        display: inline-block
+                        display: flex;
+                        align-items: center;
+                        gap: 30px;
+                        .slide-progress {
+                            width: 60px;
+                            height: 5px;
+                            display: block;
+                        }
                     }
                 }
               
