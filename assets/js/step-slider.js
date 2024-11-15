@@ -15,6 +15,7 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     },
     on: {
         autoplayTimeLeft(s, time, progress) {
+            console.log(progress);
             progressCircle.style.setProperty("--progress", 1 - progress);
         }
     }
