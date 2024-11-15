@@ -104,7 +104,8 @@
   .step-slider .thumb-slider-holder .custom-pagination-holder {
     display: flex;
     gap: 20px;
-    width: 211.11px; }
+    width: 211.11px;
+    overflow: hidden; }
     .step-slider .thumb-slider-holder .custom-pagination-holder .inner {
       transition: 400ms;
       display: flex;
@@ -118,7 +119,7 @@
         display: block;
         transition: 400ms; }
   .step-slider .thumb-slider-holder .thumb-slider-inner {
-    display: inline-flex;
+    display: flex;
     gap: 40px; }
     .step-slider .thumb-slider-holder .thumb-slider-inner > div {
       flex: 0 0 auto;
