@@ -151,7 +151,7 @@
         }
 
         .thumb-slider-inner {
-            display: flex;
+            display: inline-flex;
             gap: 40px;
             > div {
                 flex: 0 0 auto;
@@ -162,7 +162,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 15px;
-
+                width: 281.11px;
                 .swiper-button-next,
                 .swiper-button-prev {
                     position: static;
