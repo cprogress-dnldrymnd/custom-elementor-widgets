@@ -100,7 +100,8 @@
   font-size: 18px;
   position: relative;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  margin-top: 2rem; }
   .step-slider .thumb-slider-holder .outer {
     overflow: hidden; }
   .step-slider .thumb-slider-holder .custom-pagination-holder {
