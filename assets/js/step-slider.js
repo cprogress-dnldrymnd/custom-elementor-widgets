@@ -21,6 +21,19 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
                 jQuery('.custom-pagination-holder').css('--offset', '-58px');
             }
 
+
+            if (index == 4) {
+                jQuery('.custom-pagination-holder').css('--offset', '-116px');
+            }
+
+            if (index == 5) {
+                jQuery('.custom-pagination-holder').css('--offset', '-174px');
+            }
+
+            if (index == 6) {
+                jQuery('.custom-pagination-holder').css('--offset', '-232px');
+            }
+
             setTimeout(function () {
                 jQuery('.slide-progress').addClass('animate');
             }, 500);
