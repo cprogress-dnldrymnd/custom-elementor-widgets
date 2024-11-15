@@ -3,7 +3,7 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     autoplay: false,
     spaceBetween: 10,
     slidesPerView: 3,
-
+    watchSlidesProgress: true,
     navigation: {
         nextEl: ".swiper-button-next-step",
         prevEl: ".swiper-button-prev-step",
