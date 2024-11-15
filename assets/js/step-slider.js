@@ -7,7 +7,7 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
         prevEl: ".swiper-button-prev-step",
     },
     0: {
-        slidesPerView: 2,
+        slidesPerView: 3,
     },
 
 });
