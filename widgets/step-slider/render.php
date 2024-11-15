@@ -24,7 +24,7 @@ $loop = new WP_Query($args);
     <div class="thumb-slider-holder">
         <div class="thumb-slider-inner">
             <div class="left">
-                <div class="swiper-button-next swiper-button-next-step"></div>
+                <div class="swiper-button-prev swiper-button-prev-step"></div>
                 <div class="outer">
                     <div thumbsSlider class="swiper swiper-step-thumb">
                         <div class="swiper-wrapper">
@@ -41,7 +41,7 @@ $loop = new WP_Query($args);
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-prev swiper-button-prev-step"></div>
+                <div class="swiper-button-next swiper-button-next-step"></div>
             </div>
             <div class="right"></div>
         </div>
