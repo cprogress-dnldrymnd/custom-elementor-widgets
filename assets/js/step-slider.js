@@ -1,6 +1,9 @@
 var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: false,
-    autoplay: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
     spaceBetween: 10,
     slidesPerView: 3,
     watchSlidesProgress: true,
