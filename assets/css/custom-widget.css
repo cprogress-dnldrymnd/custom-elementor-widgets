@@ -105,7 +105,7 @@
     cursor: pointer;
     width: auto;
     width: auto !important; }
-    .step-slider .thumb-slider-holder .swiper-slide.swiper-slide-active .inner .slide-progress {
+    .step-slider .thumb-slider-holder .swiper-slide.swiper-slide-thumb-active .inner .slide-progress {
       width: 60px !important; }
   .step-slider .thumb-slider-holder .thumb-slider-inner {
     display: flex;
