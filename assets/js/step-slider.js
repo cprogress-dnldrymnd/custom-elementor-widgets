@@ -12,6 +12,7 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
     },
     on: {
         slideChange: function () {
+            console.log(console.log( this.realIndex ));
             jQuery('.slide-progress').removeClass('animate');
             setTimeout(function () {
                 jQuery('.slide-progress').addClass('animate');
