@@ -134,6 +134,7 @@
         .swiper-slide {
             cursor: pointer;
             width: auto;
+            width: auto !important;
             &.swiper-slide-active {
                 .inner {
                     .slide-progress {
