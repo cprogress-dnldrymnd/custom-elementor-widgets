@@ -128,7 +128,8 @@
           display: flex;
           align-items: center;
           gap: 20px;
-          font-size: 20px; }
+          font-size: 20px;
+          color: #5A6E7F; }
           .step-slider .thumb-slider-holder .thumb-slider-inner .left .outer .inner .slide-progress {
             width: 0;
             height: 5px;
