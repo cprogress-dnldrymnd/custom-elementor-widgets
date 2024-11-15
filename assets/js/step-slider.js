@@ -6,6 +6,10 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
         disableOnInteraction: false
     },
     slidesPerView: 1,
+    navigation: {
+        nextEl: ".swiper-button-next-step",
+        prevEl: ".swiper-button-prev-step",
+    },
     on: {
         slideChange: function () {
             jQuery('.slide-progress').removeClass('animate');
