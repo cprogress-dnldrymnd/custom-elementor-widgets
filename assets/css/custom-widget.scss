@@ -220,6 +220,8 @@
 
 .slide-progress {
     transition: 300ms;
+    position: relative;
+    background-color: #e3e1dd;
     &:before {
         content: "";
         position: absolute;
@@ -228,7 +230,6 @@
         left: 0;
         background-color: var(--primary-color);
         width: 0;
-        background-color: #e3e1dd;
     }
 
     &.animate {

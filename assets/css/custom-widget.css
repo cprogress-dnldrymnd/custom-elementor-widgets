@@ -166,7 +166,9 @@
   height: 20px !important; }
 
 .slide-progress {
-  transition: 300ms; }
+  transition: 300ms;
+  position: relative;
+  background-color: #e3e1dd; }
   .slide-progress:before {
     content: "";
     position: absolute;
@@ -174,8 +176,7 @@
     top: 0;
     left: 0;
     background-color: var(--primary-color);
-    width: 0;
-    background-color: #e3e1dd; }
+    width: 0; }
   .slide-progress.animate:before {
     animation-name: width;
     animation-duration: 5000ms;
