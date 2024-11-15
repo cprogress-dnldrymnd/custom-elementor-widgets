@@ -1,9 +1,10 @@
-cons progressCircle = document.querySelector(".slide-progress2");
+
 
 var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: false,
+    speed: 500,
     autoplay: {
-        delay: 2500,
+        delay: 500,
         disableOnInteraction: false
     },
     spaceBetween: 10,
@@ -14,12 +15,18 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
         prevEl: ".swiper-button-prev-step",
     },
     on: {
-        autoplayTimeLeft(s, time, progress) {
-            console.log(progress);
-            progressCircle.style.setProperty("--progress", 1 - progress);
-        }
-    }
+        slideChange: function () {
+            jQuery('.slide-progress').removeClass('animate');
+            setTimeout(function () {
+                jQuery('.slide-progress').addClass('animate');
+            }, 500);
 
+        },
+        init: function () {
+            jQuery('.slide-progress').addClass('animate');
+        },
+
+    }
 });
 
 var swiper_step_slider = new Swiper('.swiper-step-slider', {

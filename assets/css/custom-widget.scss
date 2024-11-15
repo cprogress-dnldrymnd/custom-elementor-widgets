@@ -142,7 +142,7 @@
                 }
             }
         }
-        
+
         .thumb-slider-inner {
             display: flex;
             gap: 40px;
@@ -168,13 +168,12 @@
                         align-items: center;
                         gap: 20px;
                         font-size: 20px;
-                        color: #5A6E7F;
+                        color: #5a6e7f;
                         .slide-progress {
                             width: 0;
                             height: 5px;
                             display: block;
                             transition: 400ms;
-                            background-color: #e3e1dd;
                         }
                     }
                 }
@@ -216,5 +215,39 @@
     .swiper-button-next {
         width: 20px !important;
         height: 20px !important;
+    }
+}
+
+.slide-progress {
+    transition: 300ms;
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--primary-color);
+        width: 0;
+        background-color: #e3e1dd;
+    }
+
+    &.animate {
+        &:before {
+            animation-name: width;
+            animation-duration: 5000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+/* Animation Keyframes*/
+@keyframes width {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
     }
 }
