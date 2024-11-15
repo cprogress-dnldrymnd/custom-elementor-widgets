@@ -2,17 +2,27 @@
 
 var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: false,
-    speed: 500,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-    },
+    autoplay: false,
     spaceBetween: 10,
     slidesPerView: 'auto',
     watchSlidesProgress: true,
     navigation: {
         nextEl: ".swiper-button-next-step",
         prevEl: ".swiper-button-prev-step",
+    },
+
+});
+
+var swiper_step_slider = new Swiper('.swiper-step-slider', {
+    loop: false,
+    speed: 500,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    },
+    slidesPerView: 1,
+    thumbs: {
+        swiper: swiper_step_thumb,
     },
     on: {
         slideChange: function () {
@@ -25,15 +35,5 @@ var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
         init: function () {
             jQuery('.slide-progress').addClass('animate');
         },
-
     }
-});
-
-var swiper_step_slider = new Swiper('.swiper-step-slider', {
-    loop: false,
-    autoplay: false,
-    slidesPerView: 1,
-    thumbs: {
-        swiper: swiper_step_thumb,
-    },
 });
