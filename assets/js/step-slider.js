@@ -1,4 +1,4 @@
-const progressCircle = document.querySelector(".slide-progress");
+var progressCircle = document.querySelector(".slide-progress2");
 
 var swiper_step_thumb = new Swiper('.swiper-step-thumb', {
     loop: false,

@@ -41,6 +41,7 @@ $loop = new WP_Query($args);
                             ?>
                         </div>
                     </div>
+                    <div class="slide-progress2"></div>
                 </div>
                 <div class="swiper-button-next swiper-button-next-step"></div>
             </div>
