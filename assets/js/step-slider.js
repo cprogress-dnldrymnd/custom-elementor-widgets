@@ -1,10 +1,7 @@
 var swiper_step_slider = new Swiper('.swiper-step-slider', {
     loop: false,
     speed: 500,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-    },
+    autoplay: false,
     slidesPerView: 1,
     navigation: {
         nextEl: ".swiper-button-next-step",
