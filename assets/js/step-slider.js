@@ -18,13 +18,13 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
             jQuery('.custom-pagination[key="' + index + '"]').addClass('active');
 
             if (index == 3) {
-                jQuery('.custom-pagination-holder').css('--offset', '-60px');
+                jQuery('.custom-pagination-holder').css('--offset', '-55px');
             } else if (index == 4) {
-                jQuery('.custom-pagination-holder').css('--offset', '-120px');
+                jQuery('.custom-pagination-holder').css('--offset', '-110px');
             } else if (index == 5) {
-                jQuery('.custom-pagination-holder').css('--offset', '-180px');
+                jQuery('.custom-pagination-holder').css('--offset', '-165px');
             } else if (index == 6) {
-                jQuery('.custom-pagination-holder').css('--offset', '-240px');
+                jQuery('.custom-pagination-holder').css('--offset', '-220px');
             } else {
                 jQuery('.custom-pagination-holder').css('--offset', '0');
             }
