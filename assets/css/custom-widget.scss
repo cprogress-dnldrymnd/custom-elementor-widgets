@@ -130,12 +130,14 @@
         position: relative;
         padding-left: 10px;
         padding-right: 10px;
-
+        .outer {
+            overflow: hidden;
+        }
         .custom-pagination-holder {
             display: flex;
             gap: 20px;
             width: 211.11px;
-            overflow: hidden;
+            transition: 400ms;
             .custom-pagination {
                 &.active {
                     .inner {
@@ -159,6 +161,7 @@
                     transition: 400ms;
                 }
             }
+            transform: translateX(var(--offset), 0);
         }
 
         .thumb-slider-inner {
