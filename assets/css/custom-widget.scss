@@ -122,14 +122,14 @@
         overflow: visible !important;
     }
     .thumb-slider-holder {
-        max-width: 1200px;
+        max-width: 1430px;
         margin-left: auto;
         margin-right: auto;
         font-family: "Cormorant Garamond", sans-serif;
         font-size: 18px;
         position: relative;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
         .inner {
             overflow: 0.1;
             transition: 400ms;
@@ -149,6 +149,10 @@
                     text-decoration: underline;
                 }
             }
+        }
+        .thumb-slider-inner {
+            display: flex;
+            gap: 40px;
         }
     }
     .divider {

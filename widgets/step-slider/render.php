@@ -4,27 +4,8 @@ $args = array('post_type' => 'elementor_library', 'post__in' => $slide_ids);
 $loop = new WP_Query($args);
 ?>
 <section class="step-slider">
-    <div class="thumb-slider-holder">
-        <div class="outer">
-            <div thumbsSlider class="swiper swiper-step-thumb">
-                <div class="swiper-wrapper">
-                    <?php
-                    foreach ($slide_ids as $slide_id) {
-                        $title =  get_the_title($slide_id);
-                        echo '<div class="swiper-slide">';
-                        echo '<div class="inner">';
-                        echo substr($title, strpos($title, ":") + 1);
-                        echo '</div>';
-                        echo '</div>';
-                    }
-                    ?>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next swiper-button-next-step"></div>
-        <div class="swiper-button-prev swiper-button-prev-step"></div>
-    </div>
-    <div class="divider"></div>
+
+
     <div class="main-slider-holder">
         <div class="swiper swiper-step-slider">
             <div class="swiper-wrapper">
@@ -38,6 +19,31 @@ $loop = new WP_Query($args);
                 }
                 ?>
             </div>
+        </div>
+    </div>
+    <div class="thumb-slider-holder">
+        <div class="thumb-slider-inner">
+            <div class="left">
+                <div class="swiper-button-next swiper-button-next-step"></div>
+                <div class="outer">
+                    <div thumbsSlider class="swiper swiper-step-thumb">
+                        <div class="swiper-wrapper">
+                            <?php
+                            foreach ($slide_ids as $slide_id) {
+                                $title =  get_the_title($slide_id);
+                                echo '<div class="swiper-slide">';
+                                echo '<div class="inner">';
+                                echo substr($title, strpos($title, ":") + 1);
+                                echo '</div>';
+                                echo '</div>';
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev-step"></div>
+            </div>
+            <div class="right"></div>
         </div>
     </div>
 </section>
