@@ -134,6 +134,41 @@
         .custom-pagination-holder {
             display: flex;
             gap: 20px;
+            .inner {
+                transition: 400ms;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-size: 20px;
+                color: #5a6e7f;
+                .slide-progress {
+                    width: 0;
+                    height: 5px;
+                    display: block;
+                    transition: 400ms;
+                }
+            }
+        }
+
+        .thumb-slider-inner {
+            display: flex;
+            gap: 40px;
+            > div {
+                flex: 0 0 auto;
+                width: calc(50% - 20px);
+            }
+            .left-inner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    position: static;
+                    transform: none;
+                }
+            }
         }
     }
     .divider {
