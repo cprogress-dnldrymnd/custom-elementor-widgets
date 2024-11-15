@@ -126,11 +126,15 @@
         transition: 400ms; }
   .step-slider .thumb-slider-holder .thumb-slider-inner {
     display: flex;
-    gap: 40px; }
+    gap: 40px;
+    justify-content: center; }
     @media (min-width: 1025px) {
       .step-slider .thumb-slider-holder .thumb-slider-inner > div {
         flex: 0 0 auto;
         width: calc(50% - 20px); } }
+    @media (max-width: 1024px) {
+      .step-slider .thumb-slider-holder .thumb-slider-inner .right {
+        display: none; } }
     .step-slider .thumb-slider-holder .thumb-slider-inner .left-inner {
       display: flex;
       align-items: center;

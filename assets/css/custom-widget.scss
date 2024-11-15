@@ -168,10 +168,16 @@
         .thumb-slider-inner {
             display: flex;
             gap: 40px;
+            justify-content: center;
             > div {
                 @media (min-width: 1025px) {
                     flex: 0 0 auto;
                     width: calc(50% - 20px);
+                }
+            }
+            .right {
+                @media (max-width: 1024px) {
+                    display: none;
                 }
             }
             .left-inner {
