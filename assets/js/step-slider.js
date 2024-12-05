@@ -1,4 +1,5 @@
 var swiper_step_slider = new Swiper('.swiper-step-slider', {
+    autoplay: false,
     loop: false,
     speed: 500,
     autoplay: {
