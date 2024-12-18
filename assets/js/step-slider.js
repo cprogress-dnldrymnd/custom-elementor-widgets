@@ -1,10 +1,6 @@
 var swiper_step_slider = new Swiper('.swiper-step-slider', {
     autoplay: false,
     loop: false,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-    },
     slidesPerView: 1,
     navigation: {
         nextEl: ".swiper-button-next-step",
@@ -28,16 +24,8 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
             } else {
                 jQuery('.custom-pagination-holder').css('--offset', '0');
             }
-            /*
-                        setTimeout(function () {
-                            jQuery('.slide-progress').addClass('animate');
-                        }, 500);*/
 
         },
-        /*
-        init: function () {
-            jQuery('.slide-progress').addClass('animate');
-        },*/
     }
 });
 
