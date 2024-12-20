@@ -138,10 +138,10 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
 
     public function get_script_depends()
     {
-        return ['swiper', 'custom-swiper-slider'];
+        return ['swiper-slider', 'custom-swiper-slider'];
     }
     public function get_style_depends()
     {
-        return ['swiper', 'custom-widget'];
+        return ['swiper-slider', 'custom-widget'];
     }
 }
