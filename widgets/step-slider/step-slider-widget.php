@@ -97,10 +97,10 @@ class Step_Slider extends \Elementor\Widget_Base
 
     public function get_script_depends()
     {
-        return ['swiper-slider', 'step-slider'];
+        return ['step-slider'];
     }
     public function get_style_depends()
     {
-        return ['swiper-slider', 'custom-widget'];
+        return ['custom-widget'];
     }
 }

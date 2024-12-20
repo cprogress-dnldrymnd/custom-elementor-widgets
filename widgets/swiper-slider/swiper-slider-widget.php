@@ -6,7 +6,6 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
     {
         parent::__construct($data, $args);
         wp_register_script('custom-swiper-slider', MY_PLUGIN_URL . 'assets/js/custom-swiper-slider.js');
-        wp_register_script('swiper-slider', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js');
 
     }
 
@@ -140,10 +139,10 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
 
     public function get_script_depends()
     {
-        return ['swiper-slider', 'custom-swiper-slider'];
+        return ['custom-swiper-slider'];
     }
     public function get_style_depends()
     {
-        return ['swiper-slider', 'custom-widget'];
+        return ['custom-widget'];
     }
 }
