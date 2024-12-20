@@ -16,7 +16,6 @@ define('MY_PLUGIN_URL', plugin_dir_url(__FILE__));
 function enqueue_swiper_slider_assets()
 {
     wp_register_style('custom-widget', MY_PLUGIN_URL . 'assets/css/custom-widget.css');
-    wp_register_script('swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js');
 
 }
 add_action('elementor/frontend/after_register_scripts', 'enqueue_swiper_slider_assets');
