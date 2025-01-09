@@ -3,7 +3,7 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
     autoHeight: true,
     loop: false,
     slidesPerView: 1,
-    calculateHeight:true,
+    calculateHeight: true,
     navigation: {
         nextEl: ".swiper-button-next-step",
         prevEl: ".swiper-button-prev-step",
@@ -11,6 +11,7 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
     on: {
         slideChange: function () {
             var index = this.realIndex;
+            var currentSlide = this.slides[index_currentSlide]
             jQuery('.slide-progress').removeClass('animate');
             jQuery('.custom-pagination').removeClass('active');
             jQuery('.custom-pagination[key="' + index + '"]').addClass('active');
@@ -27,7 +28,8 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
                 jQuery('.custom-pagination-holder').css('--offset', '0');
             }
 
-            console.log(this.realIndex);
+            $height = currentSlide.find('.inner').outerHeight();
+            console.log($height);
 
         },
     }
