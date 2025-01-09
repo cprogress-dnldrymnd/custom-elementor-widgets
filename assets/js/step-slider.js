@@ -29,7 +29,7 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
             }
 
             $height = currentSlide.find('.inner').outerHeight();
-            console.log($height);
+            console.log(currentSlide);
 
         },
     }
