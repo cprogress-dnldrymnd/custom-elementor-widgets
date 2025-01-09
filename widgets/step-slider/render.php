@@ -10,8 +10,8 @@ $loop = new WP_Query($args);
         <div class="swiper swiper-step-slider">
             <div class="swiper-wrapper">
                 <?php
-                foreach ($slide_ids as $slide_id) {
-                    echo '<div class="swiper-slide">';
+                foreach ($slide_ids as $key => $slide_id) {
+                    echo '<div class="swiper-slide" key="' . $key . '">';
                     echo '<div class="inner">';
                     echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display($slide_id);
                     echo '</div>';
