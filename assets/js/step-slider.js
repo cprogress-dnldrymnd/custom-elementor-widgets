@@ -28,7 +28,6 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
                 jQuery('.custom-pagination-holder').css('--offset', '0');
             }
 
-            $height = currentSlide.find('.inner').outerHeight();
             console.log(currentSlide);
 
         },
