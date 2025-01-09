@@ -3,6 +3,7 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
     autoHeight: true,
     loop: false,
     slidesPerView: 1,
+    calculateHeight:true,
     navigation: {
         nextEl: ".swiper-button-next-step",
         prevEl: ".swiper-button-prev-step",
