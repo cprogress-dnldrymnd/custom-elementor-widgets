@@ -6,6 +6,7 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
     {
         parent::__construct($data, $args);
         wp_register_script('custom-swiper-slider', MY_PLUGIN_URL . 'assets/js/custom-swiper-slider.js');
+
     }
 
     public function get_name()
@@ -51,8 +52,8 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
         $repeater->add_control(
             'image',
             [
-                'label' => esc_html__('Image', 'your-swiper-widget'),
-                'type' => \Elementor\Controls_Manager::MEDIA,
+                'label'   => esc_html__('Image', 'your-swiper-widget'),
+                'type'    => \Elementor\Controls_Manager::MEDIA,
                 'default' => [
                     'url' => \Elementor\Utils::get_placeholder_image_src(),
                 ],
@@ -63,15 +64,15 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
             'slide_heading',
             [
                 'label' => esc_html__('Slide Heading', 'your-swiper-widget'),
-                'type' => \Elementor\Controls_Manager::TEXT,
+                'type'  => \Elementor\Controls_Manager::TEXT,
             ]
         );
 
         $repeater->add_control(
             'slide_content',
             [
-                'label' => esc_html__('Content', 'your-swiper-widget'),
-                'type' => \Elementor\Controls_Manager::WYSIWYG,
+                'label'   => esc_html__('Content', 'your-swiper-widget'),
+                'type'    => \Elementor\Controls_Manager::WYSIWYG,
                 'default' => esc_html__('Slide Content', 'your-swiper-widget'),
             ]
         );
@@ -79,8 +80,8 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
         $repeater->add_control(
             'button_text',
             [
-                'label' => esc_html__('Button Text', 'your-swiper-widget'),
-                'type' => \Elementor\Controls_Manager::TEXT,
+                'label'   => esc_html__('Button Text', 'your-swiper-widget'),
+                'type'    => \Elementor\Controls_Manager::TEXT,
                 'default' => esc_html__('Click Here', 'your-swiper-widget'),
             ]
         );
@@ -88,14 +89,14 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
         $repeater->add_control(
             'button_link',
             [
-                'label' => esc_html__('Button Link', 'your-swiper-widget'),
-                'type' => \Elementor\Controls_Manager::URL,
-                'placeholder' => esc_html__('https://your-link.com', 'your-swiper-widget'),
+                'label'         => esc_html__('Button Link', 'your-swiper-widget'),
+                'type'          => \Elementor\Controls_Manager::URL,
+                'placeholder'   => esc_html__('https://your-link.com', 'your-swiper-widget'),
                 'show_external' => true, // Allow external links
-                'default' => [
-                    'url' => '',
+                'default'       => [
+                    'url'         => '',
                     'is_external' => true,
-                    'nofollow' => true,
+                    'nofollow'    => true,
                 ],
             ]
         );
@@ -103,12 +104,12 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'slides',
             [
-                'label' => esc_html__('Slides', 'your-swiper-widget'),
-                'type' => \Elementor\Controls_Manager::REPEATER,
-                'fields' => $repeater->get_controls(),
-                'default' => [
+                'label'       => esc_html__('Slides', 'your-swiper-widget'),
+                'type'        => \Elementor\Controls_Manager::REPEATER,
+                'fields'      => $repeater->get_controls(),
+                'default'     => [
                     [
-                        'image' => [
+                        'image'         => [
                             'url' => \Elementor\Utils::get_placeholder_image_src(),
                         ],
                         'slide_content' => esc_html__('Slide Content', 'your-swiper-widget'),
@@ -138,10 +139,10 @@ class Swiper_Slider_Widget extends \Elementor\Widget_Base
 
     public function get_script_depends()
     {
-        return ['swiper', 'custom-swiper-slider'];
+        return ['custom-swiper-slider'];
     }
     public function get_style_depends()
     {
-        return ['swiper', 'custom-widget'];
+        return ['custom-widget'];
     }
 }
