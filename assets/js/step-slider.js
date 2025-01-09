@@ -1,3 +1,7 @@
+$height = jQuery('.swiper-step-slider .swiper-slide[key=0]').find('.inner').outerHeight();
+
+jQuery('.swiper-step-slider .swiper-wrapper').css('--height', $height + 'px');
+
 var swiper_step_slider = new Swiper('.swiper-step-slider', {
     autoplay: false,
     autoHeight: true,
