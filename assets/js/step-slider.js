@@ -33,6 +33,5 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
 jQuery('.custom-pagination').click(function (e) {
     $key = jQuery(this).attr('key');
     swiper_step_slider.slideTo($key);
-    console.log('xx');
     e.preventDefault();
 });
