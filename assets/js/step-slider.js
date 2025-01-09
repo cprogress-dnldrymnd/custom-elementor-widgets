@@ -29,8 +29,7 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
 
             $height = jQuery('.swiper-step-slider .swiper-slide[key=' + index + ']').find('.inner').outerHeight();
 
-            console.log($height);
-
+            jQuery('.swiper-step-slider .swiper-wrapper').height($height);
         },
     }
 });
