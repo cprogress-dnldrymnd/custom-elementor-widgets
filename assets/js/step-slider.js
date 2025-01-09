@@ -27,6 +27,8 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
                 jQuery('.custom-pagination-holder').css('--offset', '0');
             }
 
+            console.log(this.realIndex);
+
         },
     }
 });
