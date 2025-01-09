@@ -11,7 +11,7 @@ var swiper_step_slider = new Swiper('.swiper-step-slider', {
     on: {
         slideChange: function () {
             var index = this.realIndex;
-            var currentSlide = this.slides[index_currentSlide]
+            var currentSlide = this.slides[index]
             jQuery('.slide-progress').removeClass('animate');
             jQuery('.custom-pagination').removeClass('active');
             jQuery('.custom-pagination[key="' + index + '"]').addClass('active');
